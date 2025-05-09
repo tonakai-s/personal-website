@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-iced-white: #f9f5d7;
+    --color-blue-black: #1d2021;
+    --color-green-blue: #83a598;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
