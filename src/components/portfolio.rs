@@ -18,7 +18,7 @@ pub fn Portolio() -> impl IntoView {
 fn PortolioItem(
     name: &'static str,
     description: &'static str,
-    gh_link: &'static str
+    gh_link: &'static str,
 ) -> impl IntoView {
     view! {
         <div class="pl-6 mt-3">
