@@ -75,7 +75,7 @@ jobs:
       - name: Prepare artifact
         run: |
           mkdir deploy
-          cp -r dist/* deploy/dist
+          cp -r dist/* deploy/
           cp -r public deploy/public
 
       - name: Upload artifact
