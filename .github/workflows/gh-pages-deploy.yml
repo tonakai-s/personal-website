@@ -72,12 +72,14 @@ jobs:
           enablement: true
           # token:
 
+      - name: Prepare artifact
+        run: |
+          tar -czf artifact.tar.gz dist public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload dist dir
-          path: './dist'
-          path: './public'
+          run: |
+            tar -xzf artifact.tar.gz
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
