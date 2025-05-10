@@ -6,6 +6,7 @@
     --color-blue-black: #1d2021;
     --color-green-blue: #83a598;
 }
+@custom-variant dark (&:where(.dark, .dark *));
 
 body {
     font-family: "Fira Code", monospace;
