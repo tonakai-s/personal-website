@@ -71,20 +71,17 @@ jobs:
         with:
           enablement: true
           # token:
+    - name: Prepare artifact
+      run: |
+        mkdir deploy
+        cp -r dist deploy/dist
+        cp -r public deploy/public
 
-      - name: Prepare artifact
-        run: |
-          tar -czf ./artifact.tar.gz ./dist ./public
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./deploy
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./artifact.tar.gz
-
-      - name: Extract artifacts
-        run: |
-          tar -xzf ./artifact.tar.gz
-
-      - name: Deploy to GitHub Pages 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+    - name: Deploy to GitHub Pages 🚀
+      id: deployment
+      uses: actions/deploy-pages@v4
