@@ -71,17 +71,18 @@ jobs:
         with:
           enablement: true
           # token:
-    - name: Prepare artifact
-      run: |
-        mkdir deploy
-        cp -r dist deploy/dist
-        cp -r public deploy/public
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./deploy
+      - name: Prepare artifact
+        run: |
+          mkdir deploy
+          cp -r dist deploy/dist
+          cp -r public deploy/public
 
-    - name: Deploy to GitHub Pages 🚀
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./deploy
+
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
