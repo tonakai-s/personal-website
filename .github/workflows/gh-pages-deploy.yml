@@ -74,16 +74,16 @@ jobs:
 
       - name: Prepare artifact
         run: |
-          tar -czf artifact.tar.gz dist public
+          tar -czf ./artifact.tar.gz ./dist ./public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: artifact.tar.gz
+          path: ./artifact.tar.gz
 
       - name: Extract artifacts
         run: |
-          tar -xzf artifact.tar.gz
+          tar -xzf ./artifact.tar.gz
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
