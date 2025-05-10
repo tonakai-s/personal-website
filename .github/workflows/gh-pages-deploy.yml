@@ -78,8 +78,8 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-          with:
-            path: artifact.tar.gz
+        with:
+          path: artifact.tar.gz
 
       - name: Extract artifacts
           run: |
