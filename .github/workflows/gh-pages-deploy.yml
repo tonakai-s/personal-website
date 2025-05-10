@@ -82,8 +82,8 @@ jobs:
           path: artifact.tar.gz
 
       - name: Extract artifacts
-          run: |
-            tar -xzf artifact.tar.gz
+        run: |
+          tar -xzf artifact.tar.gz
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
