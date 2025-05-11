@@ -28,6 +28,5 @@ pub fn ToggleDarkLight() -> impl IntoView {
                 alt="Toggle dark"
                 width="30px"
             />
-
     }
 }

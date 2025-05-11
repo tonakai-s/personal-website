@@ -4,3 +4,4 @@ pub mod icons;
 pub mod languages;
 pub mod portfolio;
 pub mod toggle;
+pub mod footer;

@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use tonakais_dev::components::{description::Description, header::Header, portfolio::Portolio};
+use tonakais_dev::components::{description::Description, header::Header, portfolio::Portolio, footer::Footer};
 
 fn main() {
     console_error_panic_hook::set_once();
@@ -14,5 +14,6 @@ fn App() -> impl IntoView {
             <Description />
             <Portolio />
         </main>
+        <Footer />
     }
 }
