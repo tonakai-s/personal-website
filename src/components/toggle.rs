@@ -17,14 +17,14 @@ pub fn ToggleDarkLight() -> impl IntoView {
             <img
                 on:click=move |_| set_dark_mode.set(!dark_mode.get())
                 class="cursor-pointer hidden dark:block"
-                src="/images/sun-icon.svg"
+                src="images/sun-icon.svg"
                 alt="Toggle light"
                 width="30px"
             />
             <img
                 on:click=move |_| set_dark_mode.set(!dark_mode.get())
                 class="cursor-pointer block dark:hidden"
-                src="/images/moon-icon.svg"
+                src="images/moon-icon.svg"
                 alt="Toggle dark"
                 width="30px"
             />

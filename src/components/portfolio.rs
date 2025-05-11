@@ -1,4 +1,5 @@
 use leptos::prelude::*;
+use crate::components::icons::GithubIcon;
 
 #[component]
 pub fn Portolio() -> impl IntoView {
@@ -22,16 +23,11 @@ fn PortolioItem(
 ) -> impl IntoView {
     view! {
         <div class="pl-6 mt-1">
-            <div>
-                <a href=gh_link target="_blank" class="flex items-center">
-                    <p class="text-xl font-bold text-green-blue">"/"{name}</p>
-                    <img
-                        src="/images/github.svg"
-                        alt="GitHub Icon"
-                        width="20px"
-                        class="ml-2"
-                    />
-                </a>
+            <div class="flex items-center">
+                <p class="text-xl font-bold text-green-blue mr-2">"/"{name}</p>
+                <GithubIcon
+                    url={gh_link.into()}
+                />
             </div>
             <p>{description}</p>
         </div>

@@ -2,7 +2,7 @@ use leptos::prelude::*;
 
 #[component]
 pub fn GithubIcon(
-    #[prop(default = "".into())] url: String,
+    #[prop(default = "https://github.com/tonakai-s".into())] url: String,
     #[prop(default = "20px".into())] width: String,
 ) -> impl IntoView {
     view! {
@@ -12,8 +12,8 @@ pub fn GithubIcon(
             >
                 <Icon
                     alt="Github Icon".into()
-                    light_src="/images/github.svg".into()
-                    dark_src="/images/github-white.svg".into()
+                    light_src="images/github.svg".into()
+                    dark_src="images/github-white.svg".into()
                     width=width
                 />
             </a>

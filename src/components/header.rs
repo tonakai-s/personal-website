@@ -36,15 +36,14 @@ fn Nav() -> impl IntoView {
             <ul class="flex gap-3">
                 <li class="w-fit">
                     <GithubIcon
-                        url="https://github.com/tonakai-s".into()
                         width="28px".into()
                     />
                 </li>
                 <li class="w-fit">
                     <Icon
                         alt="Linkedin Icon".into()
-                        light_src="/images/linkedin.svg".into()
-                        dark_src="/images/linkedin-white.svg".into()
+                        light_src="images/linkedin.svg".into()
+                        dark_src="images/linkedin-white.svg".into()
                         url=Some("https://br.linkedin.com/in/renandrnls".into())
                         width="28px".into()
                     />
@@ -52,8 +51,8 @@ fn Nav() -> impl IntoView {
                 <li class="w-fit">
                     <Icon
                         alt="X Icon".into()
-                        light_src="/images/x.svg".into()
-                        dark_src="/images/x-white.svg".into()
+                        light_src="images/x.svg".into()
+                        dark_src="images/x-white.svg".into()
                         url=Some("x.com/0xRen4s".into())
                         width="28px".into()
                     />
