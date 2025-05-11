@@ -7,14 +7,14 @@ pub fn Portolio() -> impl IntoView {
         <section class="w-full sm:w-sm lg:w-lg mx-auto mt-6 px-4 sm:px-0">
             <h3 class="text-2xl lg:text-3xl font-bold">"/home/portfolio"</h3>
             <PortolioItem
-                name="http-server"
-                description="A http server made with Rust following the CodeCrafters website."
-                gh_link="https://github.com/tonakai-s/codecrafters-http-server-rust"
-            />
-            <PortolioItem
                 name="this-page"
                 description="This page source code."
                 gh_link="https://github.com/tonakai-s/personal-website"
+            />
+            <PortolioItem
+                name="http-server"
+                description="A http server made with Rust following the CodeCrafters website."
+                gh_link="https://github.com/tonakai-s/codecrafters-http-server-rust"
             />
         </section>
     }
@@ -29,7 +29,9 @@ fn PortolioItem(
     view! {
         <div class="pl-6 mt-2">
             <div class="flex items-center">
-                <p class="text-xl lg:text-2xl font-bold text-green-blue mr-2">"/"{name}</p>
+                <a href={gh_link} target="_blank">
+                    <p class="text-xl lg:text-2xl font-bold text-green-blue mr-2">"/"{name}</p>
+                </a>
                 <GithubIcon
                     url={gh_link.into()}
                 />
