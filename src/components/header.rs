@@ -53,7 +53,7 @@ fn Nav() -> impl IntoView {
                         alt="X Icon".into()
                         light_src="images/x.svg".into()
                         dark_src="images/x-white.svg".into()
-                        url=Some("x.com/0xRen4s".into())
+                        url=Some("https://x.com/0xRen4s".into())
                         width="28px".into()
                     />
                 </li>
