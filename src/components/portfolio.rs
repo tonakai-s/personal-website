@@ -11,6 +11,11 @@ pub fn Portolio() -> impl IntoView {
                 description="A http server made with Rust following the CodeCrafters website."
                 gh_link="https://github.com/tonakai-s/codecrafters-http-server-rust"
             />
+            <PortolioItem
+                name="this-page"
+                description="This page source code."
+                gh_link="https://github.com/tonakai-s/personal-website"
+            />
         </section>
     }
 }
