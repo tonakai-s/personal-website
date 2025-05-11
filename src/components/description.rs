@@ -3,7 +3,7 @@ use leptos::prelude::*;
 #[component]
 pub fn Description() -> impl IntoView {
     view! {
-        <section class="w-full mx-auto mt-6 px-4">
+        <section class="w-full sm:w-sm lg:w-lg mx-auto mt-6 px-4 sm:px-0 sm:text-lg">
             <p>"Hi, my name is Renan! I'm a curious guy diving into the challenging world of computer science."</p>
             <br />
             <p>"I love games, music, art, and of course, programming."</p>

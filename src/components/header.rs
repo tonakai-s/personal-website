@@ -11,10 +11,10 @@ pub fn Header() -> impl IntoView {
         <header
             class="w-full grid justify-center mt-6"
         >
-            <div class="grid border-solid border-1 border-blue-black dark:border-iced-white justify-center py-2 px-12">
-                <h1 class="text-2xl font-bold">"tonakai-s"</h1>
+            <div class="grid border-solid border-1 border-blue-black dark:border-iced-white justify-center py-2 px-12 sm:w-sm lg:w-lg">
+                <h1 class="text-2xl lg:text-3xl font-bold">"tonakai-s"</h1>
                 <h2 class="text-lg">"(トナカイ-ス)"</h2>
-                <p>"A software developer"</p>
+                <p class="lg:text-lg">"A software developer"</p>
             </div>
 
             <div class="grid grid-cols-2 items-center mt-3">
