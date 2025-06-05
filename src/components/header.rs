@@ -9,7 +9,7 @@ use crate::components::{
 pub fn Header() -> impl IntoView {
     view! {
         <header
-            class="w-full grid justify-center mt-6"
+            class="w-full grid justify-center"
         >
             <div class="grid border-solid border-1 border-blue-black dark:border-iced-white justify-center py-2 px-12 sm:w-sm lg:w-lg">
                 <h1 class="text-2xl lg:text-3xl font-bold">"tonakai-s"</h1>
